@@ -1,0 +1,10 @@
+<header [ngClass]="isDarkTheme ? 'dark' : ''" _>
+  <div class="container">
+    <h1 class="title">Todo</h1>
+    <app-theme-switcher
+      (themeEmitter)="changeTheme($event)"
+      [isDarkTheme]="isDarkTheme"
+    ></app-theme-switcher>
+  </div>
+  <!-- todo add-todo component will be added here -->
+</header>

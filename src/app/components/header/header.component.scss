@@ -1,0 +1,41 @@
+@import "../../../variables";
+
+header {
+  padding: 5em 0;
+  height: 45vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-image: url("../../../assets/images/bg-mobile-light.jpg");
+  .title {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+  }
+  .container {
+    width: 80%;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+// styles for dark mode
+header.dark {
+  background-image: url("../../../assets/images/bg-mobile-dark.jpg");
+}
+
+// media queries
+@media (min-width: $tablet-breakpoint) {
+  header {
+    background-image: url("../../../assets/images/bg-desktop-light.jpg");
+  }
+
+  // styles for dark mode
+  header.dark {
+    background-image: url("../../../assets/images/bg-desktop-dark.jpg");
+  }
+}
