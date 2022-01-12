@@ -1,4 +1,4 @@
-<main class="dark">
+<main [ngClass]="isDarkTheme ? 'dark' : ''">
   <app-header (themeEmitter)="setTheme($event)" [isDarkTheme]="isDarkTheme">
   </app-header>
 </main>
