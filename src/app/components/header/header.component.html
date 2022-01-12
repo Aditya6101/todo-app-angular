@@ -1,4 +1,4 @@
-<header [ngClass]="isDarkTheme ? 'dark' : ''" _>
+<header [ngClass]="isDarkTheme ? 'dark' : ''">
   <div class="container">
     <h1 class="title">Todo</h1>
     <app-theme-switcher
@@ -6,5 +6,5 @@
       [isDarkTheme]="isDarkTheme"
     ></app-theme-switcher>
   </div>
-  <!-- todo add-todo component will be added here -->
+  <add-todo [isDarkTheme]="isDarkTheme"></add-todo>
 </header>

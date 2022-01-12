@@ -1,0 +1,15 @@
+<form
+  (ngSubmit)="handleSubmit()"
+  class="todo-form"
+  [ngClass]="isDarkTheme ? 'dark' : ''"
+>
+  <label for="todo-input"> </label>
+  <input
+    name="todo-input"
+    id="todo-input"
+    type="text"
+    placeholder="Create a new todo..."
+    required
+    [(ngModel)]="inputValue"
+  />
+</form>
