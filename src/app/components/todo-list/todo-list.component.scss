@@ -1,0 +1,26 @@
+@import "../../../variables";
+
+ul {
+  display: grid;
+  place-content: center;
+  list-style: none;
+  transform: translateY(-20%);
+  li {
+    background-color: $very-light-gray;
+    width: 80vw;
+    max-width: 500px;
+    padding: 0.7em;
+    color: $very-dark-grayish-blue;
+    border-bottom: 1px solid $light-grayish-blue;
+    &:first-of-type {
+      border-radius: 5px;
+    }
+  }
+}
+
+ul.dark {
+  li {
+    background-color: $very-dark-unsaturated-blue;
+    color: $very-light-gray;
+  }
+}

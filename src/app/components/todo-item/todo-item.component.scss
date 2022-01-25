@@ -1,0 +1,60 @@
+@import "../../../variables";
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  [type="checkbox"] {
+    display: none;
+    pointer-events: all;
+  }
+  label {
+    height: 22px;
+    width: 22px;
+    border: 1px solid $dark-grayish-blue;
+    border-radius: 50px;
+    cursor: pointer;
+    &:hover {
+      border-color: $bright-blue;
+    }
+  }
+  [type="checkbox"]:checked ~ label {
+    // background: linear-gradient(#57ddff to #c058f3);
+    background: url("../../../assets/images/icon-check.svg"), $check-background;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  p {
+    color: $very-dark-grayish-blue;
+  }
+  [type="checkbox"]:checked ~ p {
+    text-decoration: line-through;
+    color: $light-grayish-blue;
+  }
+
+  .close-btn {
+    background: none;
+    opacity: 0;
+    pointer-events: none;
+    img {
+      height: 15px;
+      width: 15px;
+    }
+  }
+  &:hover > .close-btn {
+    display: block;
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+.todo-item.dark {
+  p {
+    color: $light-grayish-blue;
+  }
+  [type="checkbox"]:checked ~ p {
+    color: $very-dark-grayish-blue;
+  }
+}
