@@ -1,24 +1,14 @@
 {
-    "todos": [
-        {
-            "id": "1",
-            "text": "Take out the trash",
-            "completed": true
-        },
-        {
-            "id": "2",
-            "text": "Clean the house",
-            "completed": true
-        },
-        {
-            "id": "3",
-            "text": "Cook dinner",
-            "completed": false
-        },
-        {
-            "id": "4",
-            "text": "Do the laundry",
-            "completed": false
-        }
-    ]
+  "todos": [
+    {
+      "id": "1",
+      "text": "Take out the trash",
+      "completed": true
+    },
+    {
+      "id": "4f56e305-5deb-4791-a224-4aab50267911",
+      "text": "asfsaf",
+      "completed": false
+    }
+  ]
 }

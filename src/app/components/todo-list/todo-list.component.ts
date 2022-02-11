@@ -12,6 +12,14 @@ export class TodoListComponent implements OnInit {
 
   constructor(private service: TodoService) {}
 
+  deleteTodo(todo: Todo) {
+    this.service
+      .deleteTodo(todo)
+      .subscribe(
+        () => (this.todos = this.todos.filter((t) => t.id !== todo.id))
+      );
+  }
+
   ngOnInit(): void {
     this.service.getTodos().subscribe((todos) => {
       this.todos = todos;
